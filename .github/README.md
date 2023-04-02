@@ -58,6 +58,8 @@ Add custom xxxx.desktop launcher files for terminal programs.
          vars:
            start_term_emulator: "xterm"
            term_arg_exec_cmd: "-e "
+           dot_desktop_launchers:
+             - { cli: 'ranger_cd', name: 'ranger' }
    ```
 
 ## Role Options
@@ -65,12 +67,6 @@ Add custom xxxx.desktop launcher files for terminal programs.
 See the role `defaults` files for main role vars listings:
 
   * [defaults](../defaults/main/)
-
-Define these _required_ vars for the role:
-
-  * `start_term_emulator`: cmd to run to start the terminal emulator
-  * `term_arg_exec_cmd`: arg to pass to start_term_emulator to exec a cmd
-
 
 ## Contributing
 

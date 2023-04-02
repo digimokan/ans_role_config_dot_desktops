@@ -1,0 +1,13 @@
+# cmd to run to start the terminal emulator
+start_term_emulator: "xterm"
+
+# opt to pass to start_term_emulator to exec a cmd
+term_arg_exec_cmd: "-e "
+
+# each dot-desktop-launcher performs these actions
+#   1. launches a new term emulator instance
+#   2. starts a user-specified CLI prog (e.g. ranger, mutt) in the instance
+dot_desktop_launchers: []
+# create_dot_desktop_launchers:
+#   - { cli: 'ranger_cd', name: 'ranger' }
+

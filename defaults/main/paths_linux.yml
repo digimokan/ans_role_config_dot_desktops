@@ -1,0 +1,3 @@
+# dir that contains accumulated '.desktop' application launching files
+linux_dot_desktop_files_dir: '/usr/share/applications'
+
