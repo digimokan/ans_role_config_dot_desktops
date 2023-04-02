@@ -1,0 +1,10 @@
+# vim: set filetype=desktop:
+# ANSIBLE-MANAGED CONFIGURATION FILE
+# purpose: start a terminal program in a terminal-emulator instance
+
+[Desktop Entry]
+Type=Application
+Name={{ prog_name }} (In Terminal)
+Exec={{ start_term_emulator }} {{ term_arg_exec_cmd }}{{ prog_cli }}
+Terminal=false
+
