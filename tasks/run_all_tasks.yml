@@ -1,0 +1,17 @@
+- name: "Create dot-desktop-file launchers: '{{ dot_desktop_launchers }}'"
+  ansible.builtin.template:
+    dest: "{{ dot_desktop_path }}"
+    src: "start_prog_in_term_desktop.j2"
+    owner: 'root'
+    mode: '644'
+    force: yes
+  vars:
+    prog_name: "{{ user_prog.name }}"
+    prog_cli: "{{ user_prog.cli }}"
+    dot_desktop_path: "{{ system_dot_desktop_files_dir }}/{{ prog_name }}_in_term.desktop"
+  loop: "{{ dot_desktop_launchers }}"
+  loop_control:
+    loop_var: user_prog
+  become: true
+  become_user: root
+
