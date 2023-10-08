@@ -54,7 +54,7 @@ Add custom xxxx.desktop launcher files for terminal programs.
        - name: "Add custom xxxx.desktop launcher files for terminal programs"
          ansible.builtin.include_role:
            name: ans_role_config_dot_desktops
-           public: yes
+           public: true
          vars:
            start_term_emulator: "xterm"
            term_arg_exec_cmd: "-e "

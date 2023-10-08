@@ -4,7 +4,7 @@
     src: "start_prog_in_term_desktop.j2"
     owner: 'root'
     mode: '644'
-    force: yes
+    force: true
   vars:
     prog_name: "{{ user_prog.name }}"
     prog_cli: "{{ user_prog.cli }}"
