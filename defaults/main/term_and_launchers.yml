@@ -2,7 +2,10 @@
 start_term_emulator: "xterm"
 
 # opt to pass to start_term_emulator to exec a cmd
-term_arg_exec_cmd: "-e "
+term_arg_exec_cmd: "-e '"
+
+# opt to pass to start_term_emulator to exec a cmd
+term_arg_exec_end: "'"
 
 # each dot-desktop-launcher performs these actions
 #   1. launches a new term emulator instance

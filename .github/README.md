@@ -57,7 +57,8 @@ Add custom xxxx.desktop launcher files for terminal programs.
            public: true
          vars:
            start_term_emulator: "xterm"
-           term_arg_exec_cmd: "-e "
+           term_arg_exec_cmd: "-e '"
+           term_arg_exec_end: "'"
            dot_desktop_launchers:
              - { cli: 'ranger_cd', name: 'ranger' }
    ```
